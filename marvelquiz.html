@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QUIZ</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="quizcss.css">
+
+
+</head>
+<body>
+	<header>
+		
+		<ul>
+			<li><a href="proindex.html">HOME</a></li>
+			<li><a href="marvelquiz.html">QUIZ</a></li>
+			<li class="list1">LOGO</li>
+			<li><a href="characters.html">CHARACTERS</a></li>
+			<li><a href="movies.html">MOVIES</a></li>
+		</ul>
+	</header>
+	<div class="main">
+	 <div id="container">
+        <div id="start">Start Quiz!</div>
+        <div id="quiz" style="display: none">
+            <div id="question"></div>
+            <div id="qImg"></div>
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+            </div>
+            <div id="timer">
+                <div id="counter"></div>
+                <div id="btimeGauge"></div>
+                <div id="timeGauge"></div>
+            </div>
+            <div id="progress"></div>
+        </div>
+        <div id="scoreContainer" style="display: none"></div>
+     </div>
+    </div>
+			
+
+</body>
+<script type="text/javascript" src="marvelquizjs.js"></script>
+</html>
